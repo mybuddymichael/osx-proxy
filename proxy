@@ -1,4 +1,4 @@
-# !/bin/sh
+#!/bin/sh
 # SSH SOCKS proxy script for Mac OS X
 
 localport=$RANDOM
