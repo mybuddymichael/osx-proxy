@@ -4,8 +4,8 @@
 # connection as a SOCKS server.
 
 localport=$RANDOM
-remoteuser="SSH_USER_HERE"
-remoteproxy="IP_OR_HOSTNAME_HERE"
+remoteuser="ssh_user_here"
+remoteproxy="ip_or_hostname_here"
 remoteport="22"
 
 if [ $1 == "on" ]; then
