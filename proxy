@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 #
 # Automatically open up an ssh tunnel and configure OS X to use the
 # connection as a SOCKS server.
