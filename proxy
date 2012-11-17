@@ -20,6 +20,7 @@ if [ $1 == "on" ]; then
   sudo networksetup -setsocksfirewallproxy Wi-Fi 127.0.0.1 $localport off
   echo "Starting SSH session. Will run in background for 1 day."
   ssh -f -p $remoteport -D $localport $remoteuser@$remoteproxy sleep 1d
+  echo "Done!"
 fi
 
 if [ $1 == "off" ]; then
@@ -34,4 +35,5 @@ if [ $1 == "killall" ]; then
   for pid in $pids; do
     kill -9 $pid
   done
+  echo "Done!"
 fi
