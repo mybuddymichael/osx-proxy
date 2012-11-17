@@ -3,10 +3,17 @@
 # Automatically open up an ssh tunnel and configure OS X to use the
 # connection as a SOCKS server.
 
-localport=$RANDOM
+# ======================================================================
+# CONFIGURATION
+# ======================================================================
+
 remoteuser="ssh_user_here"
 remoteproxy="ip_or_hostname_here"
 remoteport="22"
+
+# ======================================================================
+# END CONFIGURATION
+# ======================================================================
 
 if [ $1 == "on" ]; then
   echo "Listening on localhost:$localport. Modifying network settings.."
