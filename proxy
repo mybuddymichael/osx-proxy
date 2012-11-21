@@ -35,7 +35,7 @@ elif [ $1 == "on" ]; then
 
   # If a tunnel exists get the port number or create a new tunnel.
   if [ $? == 0 ]; then
-    localport=`echo "$processline" | cut -d " " -f 18`
+    localport=`echo "$processline" | sed "s/.*-D \([0-9]*\).*/\1/"`
   else
     # Get the min and max system-available ports.
     lowerport=`sysctl net.inet.ip.portrange.first | cut -d " " -f 2`
