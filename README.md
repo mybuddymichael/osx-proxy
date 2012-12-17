@@ -16,5 +16,5 @@ remoteport="22"
 Run like this:
 
 ```
-proxy <on|off|killall>
+proxy <on|off|kill>
 ```
